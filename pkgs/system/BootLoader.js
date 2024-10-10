@@ -104,6 +104,9 @@ export default {
           //   true
           // );
         } else {
+          let a = new Audio("./assets/startup.wav");
+          a.volume = 0.15;
+          a.play();
           await Root.Core.startPkg("apps:SHRTMGR");
           await Root.Core.startPkg("ui:Desktop", true, true);
         }
