@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud OS | Web Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="x/image" sizes="32x32" href="favicon.png">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="command-prompt">
+        <p>&copy; Clantum Studios. All rights reserved.<br>Type "help" to get a list of available commands!</p>
+        <div id="output"></div>
+        <div class="input-line">
+            <span class="prompt">
+                <span id="username">visitor</span><span>@</span><span id="host">CloudOS</span><span>:</span><span id="tilda">~</span><span>$</span>
+            </span>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+    <script src="src/realterminal.js"></script>
+</body>
+</html>
